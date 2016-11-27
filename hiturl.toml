@@ -1,0 +1,4 @@
+baseurl="http://192.168.74.179:8010"
+sitepaths=["/"]
+duration=60
+defaulthits=60
