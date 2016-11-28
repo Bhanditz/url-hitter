@@ -39,6 +39,7 @@ func hitURL(url string, period int, hits int, wg *sync.WaitGroup) {
 		resp, err := http.Get(url)
 		if err != nil {
 			fmt.Println("Error: ", err)
+			wg.Done()
 			return
 		}
 
